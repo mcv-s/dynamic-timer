@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="light-dark-styles.css">
+  <style>
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: var(--cffy-theme-surface-a10);
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      max-width: 600px;
+      line-height: 1.5;
+    }
+    body {
+      color: var(--cffy-theme-text-primary);
+    }
+
+
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+    }
+
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+
+        background-color: var(--cffy-theme-surface-a20);
+        color: var(--cffy-theme-text-primary);
+
+        border: none;
+        border-radius: 10px;
+
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    button:hover {
+        background-color: var(--cffy-theme-surface-a30);
+    }
+
+
+
+    #TimerText {
+        resize: none;
+    }
+
+
+    #SetTimer, #SetKey {
+        background-color: var(--cffy-theme-surface-a10);
+        font-size: 0.8rem;
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+
+   <div class="main">
+  <h1 id="Timer">00:00:00</h1><br>
+
+  <button onclick="toggleTimer()" id="ToggleTimer">Start Timer</button><br>
+  <button onclick="setTimer()" id="SetTimer">Set Timer</button>
+  
+
+    </div>
+
+<button onclick="setKey()" id="SetKey">Key: </button>
+
+    <script src="program.js"></script>
+</body>
+</html>

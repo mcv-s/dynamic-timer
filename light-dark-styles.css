@@ -1,0 +1,168 @@
+/* ==========================================================
+   CFFY Theme
+   Automatically follows prefers-color-scheme]
+   ========================================================== 
+   
+   Use "<link rel="stylesheet" href="light-dark-styles.css">" to import
+   
+   ========================================================== 
+   */
+
+
+   
+:root {
+
+    /* ======================================================
+       Base Text Colors
+       ====================================================== */
+
+    --cffy-theme-light-a0: #ffffff;
+    --cffy-theme-dark-a0: #000000;
+
+
+
+
+
+
+    
+    /* ======================================================
+   Text Colors
+   ====================================================== */
+
+    --cffy-theme-text-primary:   #111111;
+    --cffy-theme-text-secondary: #444444;
+    --cffy-theme-text-muted:     #666666;
+    --cffy-theme-text-disabled:  #999999;
+    --cffy-theme-text-inverse:   #ffffff;
+    --cffy-theme-link:           #21498a;
+
+
+
+
+
+
+
+
+
+    /* ======================================================
+       Primary Colors
+       ====================================================== */
+
+    --cffy-theme-primary-a0: #703921;
+    --cffy-theme-primary-a10: #60301b;
+    --cffy-theme-primary-a20: #512816;
+    --cffy-theme-primary-a30: #431f10;
+    --cffy-theme-primary-a40: #35170b;
+    --cffy-theme-primary-a50: #271006;
+
+    /* ======================================================
+       Surface Colors
+       ====================================================== */
+
+    --cffy-theme-surface-a0: #ffffff;
+    --cffy-theme-surface-a10: #f2f2f2;
+    --cffy-theme-surface-a20: #e4e4e4;
+    --cffy-theme-surface-a30: #d7d7d7;
+    --cffy-theme-surface-a40: #cacaca;
+    --cffy-theme-surface-a50: #bdbdbd;
+
+    /* ======================================================
+       Tonal Surface Colors
+       ====================================================== */
+
+    --cffy-theme-surface-tonal-a0: #f1eae7;
+    --cffy-theme-surface-tonal-a10: #e5dfdc;
+    --cffy-theme-surface-tonal-a20: #d9d4d2;
+    --cffy-theme-surface-tonal-a30: #cec9c7;
+    --cffy-theme-surface-tonal-a40: #c2bebc;
+    --cffy-theme-surface-tonal-a50: #b7b4b2;
+
+    /* ======================================================
+       Semantic Colors
+       ====================================================== */
+
+    --cffy-theme-success-a0: #22946e;
+    --cffy-theme-success-a10: #4fa482;
+    --cffy-theme-success-a20: #71b497;
+
+    --cffy-theme-warning-a0: #a87a2a;
+    --cffy-theme-warning-a10: #b58e4f;
+    --cffy-theme-warning-a20: #c2a16f;
+
+    --cffy-theme-danger-a0: #9c2121;
+    --cffy-theme-danger-a10: #ae4842;
+    --cffy-theme-danger-a20: #c06961;
+
+    --cffy-theme-info-a0: #21498a;
+    --cffy-theme-info-a10: #40639c;
+    --cffy-theme-info-a20: #607eae;
+}
+
+
+/* ==========================================================
+   Dark Mode
+   ========================================================== */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+
+        /* ======================================================
+        Text Colors
+        ====================================================== */
+
+        --cffy-theme-text-primary:   #f0f0f0;
+        --cffy-theme-text-secondary: #d0d0d0;
+        --cffy-theme-text-muted:     #aaaaaa;
+        --cffy-theme-text-disabled:  #777777;
+        --cffy-theme-text-inverse:   #000000;
+        --cffy-theme-link:           #82aef8;
+
+        /* Primary */
+
+        --cffy-theme-primary-a0: #703921;
+        --cffy-theme-primary-a10: #7f4b36;
+        --cffy-theme-primary-a20: #8d5e4b;
+        --cffy-theme-primary-a30: #9b7160;
+        --cffy-theme-primary-a40: #aa8475;
+        --cffy-theme-primary-a50: #b8988b;
+
+        /* Surface */
+
+        --cffy-theme-surface-a0: #121212;
+        --cffy-theme-surface-a10: #252525;
+        --cffy-theme-surface-a20: #393939;
+        --cffy-theme-surface-a30: #4f4f4f;
+        --cffy-theme-surface-a40: #666666;
+        --cffy-theme-surface-a50: #7d7d7d;
+
+        /* Tonal Surface */
+
+        --cffy-theme-surface-tonal-a0: #1b1614;
+        --cffy-theme-surface-tonal-a10: #2e2927;
+        --cffy-theme-surface-tonal-a20: #423d3b;
+        --cffy-theme-surface-tonal-a30: #575251;
+        --cffy-theme-surface-tonal-a40: #6d6967;
+        --cffy-theme-surface-tonal-a50: #83807f;
+
+        /* Semantic */
+
+        --cffy-theme-success-a0: #22946e;
+        --cffy-theme-success-a10: #5ba989;
+        --cffy-theme-success-a20: #86bfa6;
+
+        --cffy-theme-warning-a0: #a87a2a;
+        --cffy-theme-warning-a10: #ba945a;
+        --cffy-theme-warning-a20: #cbae84;
+
+        --cffy-theme-danger-a0: #9c2121;
+        --cffy-theme-danger-a10: #b4544c;
+        --cffy-theme-danger-a20: #ca7f77;
+
+        --cffy-theme-info-a0: #21498a;
+        --cffy-theme-info-a10: #4b6ca2;
+        --cffy-theme-info-a20: #7590ba;
+
+    }
+
+}
