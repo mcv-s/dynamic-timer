@@ -179,3 +179,21 @@ window.addEventListener("focus", () => {
 window.addEventListener("blur", () => {
     controls.classList.remove("focused");
 });
+
+
+
+
+
+
+
+
+
+
+// Service worker for PWA support
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./service-worker.js");
+}
+
+
+
