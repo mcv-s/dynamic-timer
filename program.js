@@ -9,6 +9,19 @@ if (key === null) {
 }
 console.log("Loaded timer key from localStorage: " + key);
 
+
+const params = new URLSearchParams(window.location.search);
+var keyParam = params.get("key");
+if (keyParam !== null) {
+    key = "mcvs-dynamic-timer-" + keyParam;
+    console.log("Set timer key to ", key, " loaded from URL parameter");
+}
+
+
+
+
+
+
 const button = document.getElementById("ToggleTimer");
 const timer = document.getElementById("Timer");
 const keyText = document.getElementById("SetKey");
