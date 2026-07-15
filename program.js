@@ -157,3 +157,25 @@ function updateCloud() {
         setData(seconds);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+// hide controls if not focused
+
+const controls = document.querySelector(".controls");
+
+window.addEventListener("focus", () => {
+    controls.classList.add("focused");
+});
+
+window.addEventListener("blur", () => {
+    controls.classList.remove("focused");
+});

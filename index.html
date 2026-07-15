@@ -35,22 +35,43 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 90vh;
+      min-height: 105vh;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 1vh;
+      opacity: 0;
+      filter: blur(3px);
+      transition: 
+        opacity 0.2s ease,
+        filter 0.2s ease,
+        min-height 0.2s ease;
+
+    }
+
+    .controls.focused {
+        filter: blur(0);
+        opacity: 1;
+        min-height: 10vh;
     }
 
 
     button {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        cursor: pointer;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
 
-        background-color: var(--cffy-theme-surface-a20);
-        color: var(--cffy-theme-text-primary);
+      background-color: var(--cffy-theme-surface-a20);
+      color: var(--cffy-theme-text-primary);
 
-        border: none;
-        border-radius: 10px;
+      border: none;
+      border-radius: 10px;
 
-        transition: background-color 0.2s ease, color 0.2s ease;
+      transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     button:hover {
@@ -69,6 +90,19 @@
         font-size: 0.8rem;
     }
 
+    #SetKey {
+
+      filter: blur(3px);
+      transition: filter 0.2s ease;
+      opacity: 0.1;
+    }
+
+    #SetKey:hover {
+        filter: blur(0);
+        opacity: 1;
+    }
+
+
 
   </style>
 </head>
@@ -76,14 +110,16 @@
 
 
 
-   <div class="main">
+  <div class="main">
   <h1 id="Timer">00:00:00</h1><br>
+  <div class="controls">
+  
 
   <button onclick="toggleTimer()" id="ToggleTimer">Start Timer</button><br>
   <button onclick="setTimer()" id="SetTimer">Set Timer</button>
   
-
-    </div>
+  </div>
+  </div>
 
 <button onclick="setKey()" id="SetKey">Key: </button>
 
