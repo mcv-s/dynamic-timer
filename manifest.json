@@ -1,0 +1,19 @@
+{
+  "id": "/dynamic-timer/",
+  "name": "Dynamic Timer",
+  "short_name": "Timer",
+  "description": "A versatile timer - infinitely ticks & syncs across devices.",
+  "start_url": "/dynamic-timer/",
+  "scope": "/dynamic-timer/",
+  "display": "standalone",
+  "background_color": "#252525",
+  "theme_color": "#252525",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-bi-themed.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
